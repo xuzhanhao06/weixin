@@ -1,0 +1,43 @@
+<view wx:if="{{!isdeal}}" class="orders-box">
+  <view class="orders">未处理订单
+    <button size="mini" class="deal-btn" bindtap="changeDeal">查看已处理订单</button>
+  </view>
+  <view class="orders_list"  wx:for="{{orders_nodeal}}" wx:key="index">
+    <navigator url="/pages/orderDetail/index?order_number={{item.order_number}}&&isAdmin=true">
+      <view>订单用户：{{item.goods_address.userName}}</view>
+      <view class="orders_detail">
+          <image src="{{item.userUrl}}"></image>
+          <view class="orders_inf">订单编号：{{item.order_number}}</view>
+          <view class="orders_inf">电话:{{item.goods_address.telNumber}}</view>
+          <view class="orders_inf">地址:{{item.goods_address.all}}</view>
+          <text class="orders-status">已付款</text>
+      </view>
+      <view class="orders-footer">
+            <text>实付：￥{{item.totalPrice}}</text>
+            <button size="mini" class="orders-btn" data-obj="{{item}}" data-dbid="{{item._id}}" bindtap="markDeal">标记为已处理</button>
+      </view>
+      </navigator>
+  </view>
+</view>
+
+<view wx:if="{{isdeal}}" class="orders-box">
+  <view class="orders">已处理订单
+    <button size="mini" class="deal-btn" bindtap="changeDeal">查看已处理订单</button>
+  </view>
+  <view class="orders_list"  wx:for="{{orders_deal}}" wx:key="index">
+    <navigator url="/pages/orderDetail/index?order_number={{item.order_number}}&&isAdmin=true">
+      <view>订单用户：{{item.goods_address.userName}}</view>
+      <view class="orders_detail">
+          <image src="{{item.userUrl}}"></image>
+          <view class="">订单编号：{{item.order_number}}</view>
+          <view>电话:{{item.goods_address.telNumber}}</view>
+          <view>地址:{{item.goods_address.all}}</view>
+          <text class="orders-status">已付款{{}}</text>
+      </view>
+      <view class="orders-footer">
+            <text>实付：￥{{item.totalPrice}}</text>
+            <!-- <button size="mini" class="orders-btn" data-obj="item" data-dbid="{{_id}}" bindtap="markDeal">标记为已处理</button> -->
+      </view>
+      </navigator>
+  </view>
+</view>

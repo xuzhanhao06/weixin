@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "searchbar": "/components/searchbar/searchbar",
+    "tabs": "/components/tabs/tabs"
+    },
+  "navigationBarTitleText": "图书列表",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

@@ -1,0 +1,9 @@
+
+<view bindtap="textPaste">当前账号:{{openid}}</view>
+<form bindsubmit="formSubmit">
+  <input name="input" placeholder="请输入卡号"></input>   
+  <button type="mini" class="classify-btn" form-type='submit'>查询</button> 
+</form>
+
+<text hidden="{{isHidden}}">面额：{{money}}元</text>
+<button hidden="{{isHidden}}" bindtap="charge">充值</button>

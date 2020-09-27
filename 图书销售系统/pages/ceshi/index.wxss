@@ -1,0 +1,15 @@
+.abc{
+  margin-top: 250rpx;
+  height: 100rpx;
+  width:250rpx;
+  font-size: 50rpx;
+  background: green;
+  display: flex;
+  justify-content: center;
+  
+}
+.iInput{
+  color: rgb(4, 0, 255);
+  background:red;
+  font-size: 45rpx;
+}

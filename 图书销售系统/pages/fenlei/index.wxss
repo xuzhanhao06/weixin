@@ -1,0 +1,61 @@
+.module-group{
+  padding: 40rpx;
+  background-color: #fff;
+}
+.module-group .module-top{
+  font-size: 36rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.module-top .module-title{
+  color: #494949;   /*  电影 字 字体颜色*/
+}
+.module-top .module-more{
+  color: #41be57;/*  更多 字 字体颜色*/
+}
+
+.module-scroll-view{
+  margin-top: 40rpx;
+  width: 100%;
+  height: 400rpx;
+  white-space: nowrap;/*  不换行*/
+}
+.module-scroll-view .item-navigator{
+  width: 200rpx;
+  margin-right: 20rpx;
+  display: inline-block;/*  不换行*/
+}
+.module-scroll-view .item-navigator:last-of-type{
+  margin-right:0;/* 内外边距为0 图片划到最后一个 也能跟“更多” 对齐*/ 
+}
+.item-navigator .item-group{
+  width: 100%;
+}
+.item-group .thumbnail-group{
+  width: 100%;
+ 
+}
+.thumbnail-group .thumbnail{
+  width: 100%;
+  height: 284rpx;
+  white-space: nowrap;/*  不换行*/
+  display: inline-block;/*  不换行*/
+}
+
+
+.item-group .item-title {  
+   width: 100%;
+    /*  不换行*/
+ /* white-space: nowrap;
+   display: inline-block;
+  font-size: 20rpx;*/
+    /*字体居中*/
+ text-align: center;
+ /*  margin-top: 50rpx;*//*字体与图片的距离*/
+  /*字数 溢出*/
+  text-overflow: ellipsis;
+  overflow: hidden; 
+
+}
+
+

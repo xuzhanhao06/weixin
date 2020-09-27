@@ -1,0 +1,35 @@
+page{
+background-color:   lemonchiffon;
+font-size: 45rpx;
+}
+.main{
+  /* margin-top: 90rpx; */
+  padding: 90rpx 0 90rpx 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+   border:5rpx solid #41be57;
+  background-color: #98e704;
+}
+.main input{
+  height: 100rpx;
+  background-color:white;
+}
+.main button{
+  font-size: 45rpx;
+  color: white;
+  margin-top: 50rpx;
+  height: 150rpx;
+ justify-content: center;
+background-color:darkkhaki;
+}
+.card{
+font-size: 35rpx;
+}
+.fuzhi{
+    color: white;
+    font-size: 45rpx;
+     margin-top: 50rpx;
+     width: 500rpx;
+     background-color: rgb(255, 136, 0);
+}

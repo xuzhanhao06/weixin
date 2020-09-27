@@ -1,0 +1,10 @@
+<view class="main">
+<form bindsubmit="formSubmit">
+  <input name="input" placeholder="请输入要提取的金额"></input>   
+  <button  class="classify-btn" form-type='submit'>确定提取</button> 
+</form>
+</view>
+
+<view >提取的卡号：</view>
+<text class='card' >{{_id}}</text>
+<button class="fuzhi" hidden="{{isHidden}}" bindtap='textPaste'>点击复制</button>

@@ -1,0 +1,78 @@
+<view class="user_info_wrap">
+  <view wx:if="{{userinfo.avatarUrl}}" class="user_img_wrap">
+    <image  class="user_bbg" src="{{userinfo.avatarUrl}}"></image>
+    <view class="user_info">
+      <image class="user_icon" src="{{userinfo.avatarUrl}}"></image>
+      <view class="user_name">{{userinfo.nickName}}</view>
+      <view wx:if="{{money>0}}"class="user_name">余额:{{money}} 元</view>
+      <view wx:elif="{{money==0}}" class="user_name"> 余额:0 元</view>
+    </view>
+  </view>
+<!--  -->
+  <view wx:else class="user_btn">
+    <navigator url="/pages/login/index">登陆</navigator>
+  </view>
+</view>
+
+<view class="user_content">
+  <view class="user_main">
+    <!-- 历史足迹 -->
+    <view class="history_wrap">
+      <navigator url="/pages/collect/index?type=0">
+        <view class="his_num">{{collectNums}}</view>
+        <view class="his_name">被收藏的商品</view>
+      </navigator>
+      <navigator url="/pages/collect/index?type=1">
+        <view class="his_num">{{trackNums}}</view>
+        <view class="his_name">我的足迹</view>
+      </navigator>
+    </view>
+   <!-- 历史足迹end -->
+  <!-- 我的订单-->
+  <view class="orders_wrap">
+    <view class="orders_title">我的订单</view>
+      <view class="order_content">
+        <navigator url="/pages/order/index?type=1">
+          <view class="iconfont icon-ding_dan"></view>
+          <view class="order_name">全部订单</view>
+        </navigator>
+        <navigator url="/pages/order/index?type=2">
+          <view class="iconfont icon-fukuantongzhi"></view>
+          <view class="order_name">待发货</view>
+        </navigator>
+        <navigator url="/pages/order/index?type=3">
+          <view class="iconfont icon-receipt-address"></view>
+          <view class="order_name">待收货</view>
+        </navigator>
+        <navigator url="/pages/order/index?type=4">
+          <view class="iconfont icon-tuihuotuikuan_dianpu"></view>
+          <view class="order_name">已收货</view>
+        </navigator>
+       </view> <!--order_content -->
+    </view><!--orders_wrap -->
+   <!-- 我的订单end--> 
+
+  <!-- 收货地址管理 -->
+  <view class="address_wrap">
+    <button bindtap="handleChooseAddress">收货地址管理</button>
+  </view>
+  <!-- 应用信息相关 -->
+  <view class="app_info_wrap">
+    <view class="app_info_item app_info_contact">
+      <button open-type="contact">联系客服</button>
+      
+    </view>
+    <navigator url="/pages/feedback/index" class="app_info_item">意见反馈</navigator>
+    <view class="app_info_item">
+    <button bindtap="popConfirm">关于我们</button>
+    </view>
+  </view>
+  <!-- 应用信息相关end -->
+  <!-- 推荐 -->
+  <view class="recommend_wrap">
+      <button class="clearStorage" open-type='share'>把应用推荐给其他人</button>
+  </view>
+    <button class="clearStorage" bindtap="clearStorage">清除缓存</button>
+  <!-- 推荐end -->
+  </view><!-- user_content -->
+</view>

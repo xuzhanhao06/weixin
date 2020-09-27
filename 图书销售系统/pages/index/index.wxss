@@ -1,0 +1,64 @@
+page {
+  margin-bottom: 60rpx;
+}
+/*  轮番图*/
+.index-swiper-wrap .index-swiper {
+  margin-top: 5rpx;
+  height: 340rpx;
+}
+.index-swiper-wrap .index-swiper .index-swiper-item navigator {
+  width: 100%;
+  height: 100%;
+}
+.index-swiper-wrap .index-swiper .index-swiper-item navigator image{
+  width: 100%;
+}
+/*  轮番图end*/
+.text{
+  display: flex;
+  align-content: center;
+  padding: 20rpx 20rpx 20rpx 24rpx;
+  font-size: 30rpx; 
+  color: #656565
+}
+/* 导航栏 */
+.index-catitems-wrap {
+    display: flex;
+    height: 50%; 
+
+}
+.index-catitems-wrap navigator {
+  flex: 1;
+  padding: 20rpx; 
+}
+.index-catitems-wrap image {
+    width: 100%;
+}
+.index-catitems-wrap .index-catitems-name{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rpx;
+}
+/* 导航栏 end*/
+.content{
+ display: flex;
+ justify-content: space-between;
+ flex-wrap:wrap;
+}
+
+.item{
+ width: 375rpx;
+ margin: 0rpx 0rpx 20rpx 0rpx;
+}
+.goods_title{
+   text-align: center;
+    text-overflow: ellipsis;
+  overflow: hidden; 
+}
+.item image{
+ width: 70%;
+ height: 250rpx;
+ padding: 20rpx 20rpx 20rpx 20rpx;
+}
+/*首页热门商品end*/

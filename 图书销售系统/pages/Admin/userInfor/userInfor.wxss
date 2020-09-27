@@ -1,0 +1,18 @@
+page{
+/*  background-color: #e9e9e9;*/
+  font-size: 32rpx;
+     font-family:"宋体";   /*设置字体为宋体*/
+   font-weight:bold;    /*设置字体加粗*/
+ background: linear-gradient(rgb(133, 245, 4), rgb(145, 255, 0), yellow); 
+}
+/* .main{
+  padding: 20rpx 0 20rpx 40rpx;
+  border: 10rpx solid rgb(243, 219, 5);
+  background-color: white;
+} */
+
+navigator{
+   padding: 20rpx 0 20rpx 40rpx;
+  border: 10rpx solid rgb(243, 219, 5);
+  background-color: white;
+}

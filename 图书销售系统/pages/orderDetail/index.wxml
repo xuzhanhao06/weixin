@@ -1,0 +1,30 @@
+<view class="main">
+    <view class="orders">订单编号：{{orders.order_number}}</view>
+      <view class="cart-box">
+        <view class="cart-list" wx:for="{{orders.order_detail}}" wx:key="{{index}}">
+          <image class="cart-thumb" src="{{item.goods_Url}}"></image>
+            <text class="cart-pro-name">{{item.goods_title}}</text>
+            <text class="cart-pro-price">￥{{item.goods_price}}</text>
+            <view class="cart-count-box">
+              <text class="cart-count-num">数量：{{item.goods_number}}</text>
+            </view>
+            <text class="cart-del">{{item.goods_price*100*item.goods_number/100}}</text>
+        </view>
+       <view wx:if="{{!orders.isDeal}}">
+          <block wx:if="{{orders.isApplyRefund}}"><view class="Refunding">正在退款中</view></block>
+          <block wx:else><button bindtap="applyRefund">申请退款</button></block>
+       </view>
+        <button  hidden="{{orders.isReceiving}}" bindtap="Receiving">确认收货</button>
+        <button type="primary" hidden="{{isHidden}}" bindtap="bindRefund">退款</button>
+      </view>
+      <view class="cart-address">
+      </view>
+      <view class="cart-footer">
+      <view class="cart-address-detail">
+        <view class="">{{orders.goods_address.userName}}: {{orders.goods_address.telNumber}}</view>
+        <view class="">{{orders.goods_address.all}}</view>
+      </view>
+      <text class="cart-total-price">￥{{orders.totalPrice}}</text>
+      </view>
+
+</view>

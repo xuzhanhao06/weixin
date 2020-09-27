@@ -1,0 +1,6 @@
+<input class="input" bindinput="aaInput123" ></input>
+<view> {{aInput}}</view>
+
+
+
+<button bindtap="asdasd">按键</button>

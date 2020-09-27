@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    
+    "searchbar": "/components/searchbar/searchbar"
+  },
+  "navigationBarTitleText": "按类找找书",
+  "enablePullDownRefresh": true
+
+}

@@ -1,0 +1,12 @@
+<view>请填写管理员信息</view>
+  <form bindsubmit='getValue'>
+    <input class="inputV" type='text' class='info' placeholder="姓名:" name="name"></input>
+    <input class="inputV" type='text' class='info' placeholder="opneid:" name="openid"></input>
+    <button class="add" size="mini"  form-type='submit'>添加</button> 
+  </form>	
+<view wx:for="{{Managers}}" wx:key="index">
+  <view class="item">
+    <view class="manger">姓名:{{item.name}}   openid:{{item._openid}}</view>
+    <button hidden="{{isHidden}}" class="del" size="mini" data-_id="{{item._id}}"bindtap="deleteManagers">删除</button>
+  </view>
+</view>

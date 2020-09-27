@@ -1,0 +1,60 @@
+<!-- 轮播图 -->
+<view class="detail_swiper">
+  <swiper autoplay circular indicator-dots>
+  <!-- bindtap="handlePrevewImage" data-url="{{item.goods_swiper}}" -->
+    <swiper-item wx:for="{{goods.goods_swiper}}" wx:key="goods_id" >
+      <image mode="widthFix" src="{{item}}"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 轮播图end -->
+
+<!-- 价格 +  名字 +收藏-->
+<view class="goods_price">${{goods.goods_price}}</view>
+<view class="goods_name_row">
+  <view class="goods_name">{{goods.goods_title}}</view>
+  <view class="goods_collect" bindtap="handleCollect">
+    <text class="iconfont {{isCollect?'icon-shoucang1':'icon-shoucang'}}"></text>
+    <view class="collect_text">收藏</view>
+  </view>
+</view>
+<!-- 价格 +  名字  end-->
+
+<!-- 图文详情 -->
+<view class="goods_info">
+  <view class="goods_info_title">图文详情</view>
+  <view class="goods_info_content">
+  <image mode="widthFix" src="{{goods.goods_info_content}}"></image>
+  </view>
+</view>
+<!-- 图文详情 end-->
+
+<!-- 底部工具栏 功能 -->
+<view class="btm_tool">
+  <view class="tool_item">
+    <view class="iconfont icon-kefu"></view>
+    <view >客服</view>
+    <button open-type="contact"></button>
+  </view>
+
+ <view class="tool_item">
+    <view class="iconfont icon-yixianshi-"></view>
+    <view >分享</view>
+    <button open-type="share"></button>
+  </view>
+<!-- 点击 购物车跳转到tabbar页面的购物车 所以要加 open-type="switchTab"  -->
+ <navigator open-type="switchTab" url="/pages/gouwuche/index" class="tool_item">
+    <view class="iconfont icon-gouwuche"> </view>
+    <view >购物车</view>
+  </navigator>
+
+ <view class="tool_item btn_cart" bindtap="handleCartAdd">加入购物车 </view>
+
+ <view class="tool_item btn_buy">立即购买</view>
+
+
+
+</view>
+
+
+<!-- 底部工具栏 功能 end-->

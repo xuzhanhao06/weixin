@@ -1,0 +1,23 @@
+ <block wx:if="{{goods.length!==0}}">
+  <view class="classify-list" wx:for="{{goods}}" wx:key="index">
+      <navigator url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+        <view class="classify-detail">
+            <image src="{{item.goods_Url}}"></image>
+            <view>商品id：{{item.goods_id}}</view>
+            <view class="classify-title" >标题: {{item.goods_title}}</view>
+            <view class="">分类: {{item.goods_classify}}</view>
+            <view>库存:{{item.goods_stock}}</view>
+            <view class="">价格: {{item.goods_price}}</view>
+        </view>
+    </navigator>
+        <view class="classify-footer">
+            <button size="mini" class="classify-btn"  data-_id="{{item._id}}" bindtap="modalinput">上架</button> 
+            <modal hidden="{{hiddenmodalput}}" title="请输入库存值" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm"> 
+   <input bindinput="bindinput" type='text'placeholder="请输入内容" auto-focus/>
+  </modal>
+        </view>               
+  </view>    
+</block>
+<block wx:else>
+      <image mode="widthFix" src="cloud://stu-z3quc.7374-stu-z3quc-1300980404/小程序素材/空空如也.jpg"></image>
+</block>

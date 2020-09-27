@@ -1,0 +1,38 @@
+page{
+  font-size: 36rpx;
+  background: linear-gradient(rgb(245, 241, 4), rgb(208, 255, 0), rgb(187, 255, 0));
+}
+view{
+  margin-top: 30rpx; 
+  color: red;
+   display: flex;
+align-content: center;
+justify-content: center;
+}
+
+input{
+  margin-top: 50rpx;
+font-size: 39rpx;
+color:  mediumorchid;
+border: 1rpx solid rgba(0, 0, 0, 0.1);
+border-radius: 8rpx; 
+}
+form button{
+  margin-top: 30rpx;
+  height: 100rpx;
+  width: 200rpx;
+  background:#41be57;
+  margin-bottom: 30rpx;
+}
+text{
+  color: red;
+  font-size: 50rpx;
+  position: relative;
+  left: 33%;
+}
+  button{
+  margin-top: 30rpx;
+  height: 100rpx;
+  width: 200rpx;
+  background:coral;
+} 

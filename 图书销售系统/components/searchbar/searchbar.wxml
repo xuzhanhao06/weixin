@@ -1,0 +1,8 @@
+<view class="searchbar">
+    <navigator  url='/pages/search/index'  class='search-navigator' ></navigator>
+    <!-- wx:if="{{isnavigator}}" -->
+    <!-- <view wx:else class="search-input-group">
+      <input value="{{inputValue}}" class="search-input" placeholder="请输入您要搜索的书籍" bindinput="handleInpt"></input>
+      <button bindtap="handleCancel" hidden="{{!isFocus}}">取消</button>
+    </view> -->
+</view> 

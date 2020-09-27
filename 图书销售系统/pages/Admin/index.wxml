@@ -1,0 +1,56 @@
+
+  <!-- 修改主页面 -->
+  <view class="uploader">
+    <navigator url="modifyIndex/modifyIndex" open-type="navigate" class="uploader-text">
+      <text>修改主页面</text>
+    </navigator>
+  </view>
+
+  <!-- 商品管理 -->
+  <view class="uploader">
+    <navigator url="goodsMgr/goodsMgr" open-type="navigate" class="uploader-text">
+      <text>商品管理</text>
+    </navigator>
+  </view>
+
+  <!-- 查看订单 -->
+  <view class="uploader">
+    <navigator url="allOrders/allOrders" open-type="navigate" class="uploader-text">
+      <text>查看订单</text>
+    </navigator>
+  </view>
+
+ <!-- 查看反馈 -->
+  <view class="uploader">
+    <navigator url="userFeed/userFeed" open-type="navigate" class="uploader-text">
+      <text>用户反馈</text>
+    </navigator>
+  </view>
+
+  <!-- 查看客户信息 -->
+  <view class="uploader">
+    <navigator url="userInfor/userInfor" open-type="navigate" class="uploader-text">
+      <text>用户信息</text>
+    </navigator>
+  </view>
+
+    <!-- 提取充值卡 -->
+  <view class="uploader">
+    <navigator url="RechargeCard/RechargeCard" open-type="navigate" class="uploader-text">
+      <text>提取充值卡</text>
+    </navigator>
+  </view>
+
+ <!-- 已售罄商品 -->
+  <view class="uploader">
+    <navigator url="SellOut/SellOut" open-type="navigate" class="uploader-text">
+      <text>已售罄商品</text>
+    </navigator>
+  </view>
+
+   <!-- 管理员列表 -->
+  <view class="uploader">
+    <navigator url="Managers/Managers" open-type="navigate" class="uploader-text">
+      <text>管理员列表</text>
+    </navigator>
+  </view>

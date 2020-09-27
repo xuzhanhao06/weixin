@@ -1,0 +1,17 @@
+page{
+/*  background-color: #e9e9e9;*/
+  font-size: 38rpx;
+     font-family:"宋体";   /*设置字体为宋体*/
+   font-weight:bold;    /*设置字体加粗*/
+ background: linear-gradient(rgb(4, 240, 130), rgb(0, 255, 76), yellow); 
+}
+.main{
+  padding: 20rpx 0 20rpx 40rpx;
+  border: 10rpx solid rgb(243, 219, 5);
+  background-color: white;
+
+}
+.money{
+    font-size: 50rpx;
+    color: red;
+}

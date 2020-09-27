@@ -1,0 +1,7 @@
+<view class="searchbar">
+    <view  class="search-input-group">
+      <input value="{{inputValue}}" class="search-input" placeholder="请输入您要搜索的书籍" bindinput="handleInpt"></input>
+      <button bindtap="handleCancel" hidden="{{!isFocus}}">取消</button>
+    </view>
+</view> 
+<navigator class="nav" url="/pages/goods_list/index?search={{search}}">确认搜索</navigator>

@@ -1,0 +1,92 @@
+<!-- 搜索栏 -->
+<searchbar isnavigator="{{true}}"></searchbar>
+<!-- 搜索栏 -->
+<!-- 科幻类 -->
+<view class="module-group">
+    <view class="module-top">
+      <view class="module-title">科幻类</view>
+      <navigator class="module-more" url="/pages/goods_list/index?id=科幻">更多</navigator>
+    </view>
+
+    <scroll-view class="module-scroll-view" scroll-x="{{true}}">
+      <navigator class="item-navigator" wx:for="{{fiction}}" wx:key='goods_id' url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+      <!-- 每个商品的名字传过去 -->
+        <view class="item-group">
+          <view class="thumbnail-group">
+              <image class="thumbnail" src="{{item.goods_Url}}" > </image>
+              <view class="item-title" style="flex-direction:row;">{{item.goods_title}}</view>        
+          </view>   
+          <!-- 组件里的.js 定义了 fontsize &fontcolor -->
+      <!-- <stars rate="8" fontsize="30" fontcolor="#000" ></stars> -->
+        </view>
+      </navigator>       
+    </scroll-view>
+</view>
+
+<!-- 教育 -->
+<view class="module-group">
+    <view class="module-top">
+    
+      <view class="module-title">教育类</view>
+      <navigator class="module-more" url="/pages/goods_list/index?id=教育">更多</navigator>
+    </view>
+
+    <scroll-view class="module-scroll-view" scroll-x="{{true}}">
+      <navigator class="item-navigator" wx:for="{{education}}" wx:key='goods_id' url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+      <!-- 每个商品的名字传过去 -->
+        <view class="item-group">
+          <view class="thumbnail-group">
+              <image class="thumbnail" src="{{item.goods_Url}}" > </image>
+              <view class="item-title" style="flex-direction:row;">{{item.goods_title}}</view>        
+          </view>   
+          <!-- 组件里的.js 定义了 fontsize &fontcolor -->
+      <!-- <stars rate="8" fontsize="30" fontcolor="#000" ></stars> -->
+        </view>
+      </navigator>       
+    </scroll-view>
+</view>
+
+<!-- 生活类-->
+<view class="module-group">
+    <view class="module-top">
+    
+      <view class="module-title">生活类</view>
+      <navigator class="module-more" url="/pages/goods_list/index?id=生活">更多</navigator>
+    </view>
+
+    <scroll-view class="module-scroll-view" scroll-x="{{true}}">
+      <navigator class="item-navigator" wx:for="{{daily}}" wx:key='goods_id' url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+      <!-- 每个商品的名字传过去 -->
+        <view class="item-group">
+          <view class="thumbnail-group">
+              <image class="thumbnail" src="{{item.goods_Url}}" > </image>
+              <view class="item-title" style="flex-direction:row;">{{item.goods_title}}</view>        
+          </view>   
+          <!-- 组件里的.js 定义了 fontsize &fontcolor -->
+      <!-- <stars rate="8" fontsize="30" fontcolor="#000" ></stars> -->
+        </view>
+      </navigator>       
+    </scroll-view>
+</view>
+<!-- 其他类 -->
+<view class="module-group">
+    <view class="module-top">
+    
+      <view class="module-title">其他类</view>
+      <navigator class="module-more" url="/pages/goods_list/index?id=其他">更多</navigator>
+    </view>
+
+    <scroll-view class="module-scroll-view" scroll-x="{{true}}">
+      <navigator class="item-navigator" wx:for="{{other}}" wx:key='goods_id' url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+      <!-- 每个商品的名字传过去 -->
+        <view class="item-group">
+          <view class="thumbnail-group">
+              <image class="thumbnail" src="{{item.goods_Url}}" > </image>
+              <view class="item-title" style="flex-direction:row;">{{item.goods_title}}</view>        
+          </view>   
+          <!-- 组件里的.js 定义了 fontsize &fontcolor -->
+      <!-- <stars rate="8" fontsize="30" fontcolor="#000" ></stars> -->
+        </view>
+      </navigator>       
+    </scroll-view>
+</view>

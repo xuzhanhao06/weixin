@@ -1,0 +1,40 @@
+<searchbar isnavigator="{{true}}"></searchbar>
+<!-- 监听自定义事件 -->
+<tabs tabs="{{tabs}}" bindtabsItemChange="handletabsItemChange">
+  <block wx:if="{{tabs[0].isActive}}">
+   <view class="first_tab">
+    <navigator class="goods_item" wx:for="{{goods}}" wx:key="{{goods_id}}" url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+      <!-- 左侧 图片容器 图片为空则用默认值-->
+      <view class="goods_img_wrap">
+        <image mode="widthFix" src="{{item.goods_Url?item.goods_Url:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}"></image>
+      </view>
+      <!-- 右侧 商品容器 -->
+      <view class="goods_info_wrap">
+        <view class="goods_name">{{item.goods_title}}</view>
+        <view>库存:{{item.goods_stock}}件</view>
+  
+      </view>
+    <view class="goods_price">${{item.goods_price}}</view>
+    </navigator>
+    </view> 
+  </block>
+
+   
+  <block wx:elif="{{tabs[1].isActive}}">
+   <view class="first_tab">
+    <navigator class="goods_item" wx:for="{{goodsPr}}" wx:key="{{goods_id}}" url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+      <!-- 左侧 图片容器 图片为空则用默认值-->
+      <view class="goods_img_wrap">
+        <image mode="widthFix" src="{{item.goods_Url?item.goods_Url:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}"></image>
+      </view>
+      <!-- 右侧 商品容器 -->
+      <view class="goods_info_wrap">
+        <view class="goods_name">{{item.goods_title}}</view>
+         <view>库存:{{item.goods_stock}}件</view>
+      </view>
+        <view class="goods_price">${{item.goods_price}}</view>
+    </navigator>
+    </view> 
+  </block>
+ <!-- <block wx:elif="{{tabs[2].isActive}}">2</block> -->
+</tabs>

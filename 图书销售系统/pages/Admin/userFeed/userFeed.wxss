@@ -1,0 +1,19 @@
+page{
+  background-color: #e9e9e9;
+   background: linear-gradient(rgb(133, 245, 4), rgb(145, 255, 0), yellow); 
+   font-family:"宋体";   /*设置字体为宋体*/
+   font-weight:bold;    /*设置字体加粗*/
+}
+.main{
+  margin: 10rpx 10rpx 5rpx 10rpx;
+
+  background-color: white; 
+/*  margin: 20rpx 20rpx 0 20rpx;*/
+   border: 10rpx solid #95ec08f3;
+}
+.main  image{
+  width: 90%;
+ height: 450rpx;
+ margin-left: 5rpx;
+
+}

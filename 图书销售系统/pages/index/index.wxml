@@ -1,0 +1,39 @@
+<searchbar></searchbar>
+<!-- 轮播图 -->
+<view class="index-swiper-wrap">
+  <swiper class="index-swiper" indicator-dots indicator-active-color="#41be57" autoplay circular interval="3000">
+     <block wx:for="{{swiperdata}}" wx:key="index"> 
+      <swiper-item class="index-swiper-item">
+        <navigator >
+          <image mode="widthFix" src="{{item}}" ></image>      
+        </navigator> 
+      </swiper-item>
+     </block> 
+  </swiper>
+</view>
+<!-- 轮播图END -->
+<view class="text">
+  <text>导航</text>
+</view>
+<!-- 导航 -->
+<view class="index-catitems-wrap">
+  <block wx:for="{{catitems}}" wx:key="{{item.name}}">
+  <!-- open-type="switchTab" -->
+    <navigator url="{{item.url}}" >
+      <image src="{{item.image_src}}" mode="widthFix"></image>
+      <!-- <view class="index-catitems-name">{{item.name}}</view> -->
+    </navigator>
+  </block>
+</view>
+<!-- 导航END -->
+<view class="text">
+  <text>热门推荐</text>
+</view>  
+<view class="content">
+ <view wx:for="{{isRecommend}}" class="item">
+  <navigator url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+     <image src="{{item.goods_Url}}" mode="aspectFill"></image>
+     <view class="goods_title">{{item.goods_title}}</view>
+  </navigator>
+ </view>
+</view>

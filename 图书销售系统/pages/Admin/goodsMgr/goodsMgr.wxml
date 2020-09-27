@@ -1,0 +1,44 @@
+<view class="classify-box">
+    <view class="classify">添加商品 最大id:{{maxid}}</view>
+    <form bindsubmit='getValue'>
+      <view class="classify-add-detail">    
+        <!-- 必填 -->
+         <checkbox-group  bindchange="checkboxChange">
+          <checkbox value="true">选择是否上首页推荐</checkbox>
+         </checkbox-group>
+        <view class='create-tip'>必填项</view>
+        <!-- <input type='text' class='create-title' placeholder="商品编号id(不能重复):" name="goods_id"></input>    -->
+
+        <view class='create-tip'></view>
+        <input type='text' class='create-title' placeholder="标题: " name="goods_title"></input> 
+        <input type='text' class='create-title' placeholder="库存: " name="goods_stock"></input>            
+        <input type='text' class='create-title' placeholder="价格: " name="goods_price"></input> 
+        <view class='create-tip'>详情页</view>
+        <button bindtap="actioncnt">类别</button>
+        <button bindtap="onCover">上传封面</button>
+        <button bindtap="onContent">上传图文详情</button>
+        <button bindtap="onSwiper">上传商品实拍</button>
+      </view>
+      <view class="classify-footer">
+        <button size="mini" class="classify-btn" form-type='submit'>添加</button> 
+      </view>  
+    </form>	
+    <text> \n </text>
+    
+    <view class="classify-list" wx:for="{{goods}}" wx:key="index">
+    <navigator url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+      <view class="classify-detail">
+          <image src="{{item.goods_Url?item.goods_Url:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}"></image>
+          <view>商品id：{{item.goods_id}}</view>
+          <view class="classify-title" >标题: {{item.goods_title}}</view>
+          <view class="">分类: {{item.goods_classify}}</view>
+          <view>库存:{{item.goods_stock}}</view>
+          <view class="">价格: {{item.goods_price}}</view>
+          
+      </view>
+  </navigator>
+      <view class="classify-footer">
+          <button size="mini" class="classify-btn" data-index="{{index}}" data-_id="{{item._id}}" data-item="{{item}}" bindtap="deleteGoods">删除 </button> 
+      </view>               
+    </view>    
+</view>

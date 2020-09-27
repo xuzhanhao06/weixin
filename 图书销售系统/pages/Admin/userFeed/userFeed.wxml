@@ -1,0 +1,7 @@
+<view class="main" wx:for="{{Feedback}}" wx:key="_id">
+  <view>{{item.time}}</view>
+  <view>{{item.textVal}}</view>
+  <view  wx:for="{{item.file_ID}}" wx:key="file_ID">
+    <image src="{{item}}"></image>
+  </view>
+</view>

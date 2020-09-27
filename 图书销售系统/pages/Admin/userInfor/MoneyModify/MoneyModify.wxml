@@ -1,0 +1,8 @@
+<view class="main">
+    <text>openid:\t{{userInfo.openid}} \n</text>
+    <text>nickName:\t{{userInfo.name}}\n</text>
+    <text class="money">money:\t{{userInfo.money}}\n</text>
+    <textarea bindinput="handleTextInput"  placeholder="请输入要修改的金额"></textarea>
+    <button bindtap="bindMoney">确定修改</button>
+</view>
+ 

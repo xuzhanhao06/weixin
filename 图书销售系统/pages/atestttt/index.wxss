@@ -1,0 +1,5 @@
+.input{
+  background: red;
+  font-size: 45rpx;
+  color: blue;
+}

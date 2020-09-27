@@ -1,0 +1,19 @@
+
+  <view class="fb_main">
+    <view class="fb_content">
+      <textarea value="{{textVal}}"bindinput="handleTextInput"  placeholder="请描述下您的问题\n以及联系方式"></textarea>
+      <view class="fb_tool">
+        <button bindtap="handleChooseImg">+</button>
+        <!-- 简单数组的key是 索引*this -->
+        <view wx:for="{{chooseImgs}}" wx:key="*this" class="up_img_item" bindtap="handleRemoveImg" data-index="{{index}}">
+        <UpImg src="{{item}}"></UpImg>
+        </view>
+      </view>
+    </view>
+      <view class="form_btn_wrap">
+        <button bindtap="handleFormSubmit" type="primary">
+          <icon type="success_no_circle" size="23" color="white"></icon>
+          提交
+        </button>    
+    </view>
+  </view>

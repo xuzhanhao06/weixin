@@ -1,0 +1,10 @@
+<view class="main">
+  <view wx:for="{{userInfor}}" wx:key="_id">
+  <navigator url="/pages/Admin/userInfor/MoneyModify/MoneyModify?name={{item.userInfo.nickName}}&money={{item.money}}&&openid={{item._openid}}&_id={{item._id}}">
+    <text>openid:\t{{item._openid}} \n</text>
+    <text>nickName:\t{{item.userInfo.nickName}}\n</text>
+    <text>city:\t{{item.userInfo.city}}\n</text>
+    <text>money:\t{{item.money}}\n</text>
+  </navigator> 
+  </view>
+</view>

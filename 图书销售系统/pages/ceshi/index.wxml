@@ -1,0 +1,4 @@
+
+<input class="iInput" bindinput="iInput"></input>
+<view>{{input}}</view>
+<button class="abc" bindtap="clO">开始</button>

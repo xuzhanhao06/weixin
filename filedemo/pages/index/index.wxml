@@ -1,0 +1,4 @@
+<!--filedemo/pages/index/index.wxml-->
+<button bindtap="onFileSelectEvent">选择图片</button>
+<!-- 使用图片 -->
+<image src="cloud://stu-z3quc.7374-stu-z3quc-1300980404/abc.png"></image>

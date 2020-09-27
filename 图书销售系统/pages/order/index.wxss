@@ -1,0 +1,34 @@
+.order_main .order_item {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+  color: #666;
+}
+.order_main .order_item .order_no_row {
+  display: flex;
+  padding: 10rpx 0;
+  justify-content: space-between;
+  text-align: center;
+  white-space: nowrap;
+  
+
+}
+.order_main .order_item .order_no_row .order_no_value{
+text-overflow: ellipsis;
+  overflow: hidden; 
+  margin-left: 100rpx;
+  /*width: 100%;*/
+}
+.order_main .order_item .order_price_row {
+  display: flex;
+  padding: 10rpx 0;
+  justify-content: space-between;
+}
+.order_main .order_item .order_price_row .order_price_value {
+  color: red;
+  font-size: 32rpx;
+}
+.order_main .order_item .order_time_row {
+  display: flex;
+  padding: 10rpx 0;
+  justify-content: space-between;
+}

@@ -1,0 +1,32 @@
+page{
+  font-size: 32rpx;
+     font-family:"宋体";   /*设置字体为宋体*/
+   font-weight:bold;    /*设置字体加粗*/
+ background: linear-gradient(rgb(133, 245, 4), rgb(145, 255, 0), yellow); 
+}
+
+form .add{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-right: 0rpx;
+  margin-top: 20rpx;
+  background-color: rgb(255, 187, 0);
+}
+input{
+   display: flex;
+   margin-left: 50rpx;
+  width: 100%;
+  margin-top: 20rpx;
+}
+.item{
+  height: 150rpx;
+  width: 96%;
+  border: 10rpx solid #e9e9e9;
+  padding: 5rpx 5rpx 5rpx 5rpx;
+}
+
+.del{
+float: right;
+background-color: rgb(255, 123, 0);
+}
