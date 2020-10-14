@@ -10,6 +10,6 @@
 </p>
 
 <p>
-<img alt src="https://github.com/xuzhanhao06/weixin/预览1.jpg" />
+<img alt src="https://github.com/xuzhanhao06/weixin/预览1.png" />
  
 </p>
